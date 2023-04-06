@@ -5,7 +5,8 @@ import { exec as originalExec, execSync } from 'child_process';
 import prompts from "prompts";
 
 let openai;
-async function getGitSummary() {
+
+export async function getGitSummary() {
   try {
     const dotenv = await import("dotenv");
     dotenv.config();
