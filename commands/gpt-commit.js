@@ -16,7 +16,13 @@ async function getGitSummary() {
     
     const exec = promisify(originalExec);
     const { stdout } = await exec("git diff --cached --stat");
-    return stdout.trim();
+    const summary = stdout.trim();
+    if (summary.length === 0) {
+      return null;
+    }
+
+    return summary;
+
   } catch (error) {
     console.error("Error while summarizing Git changes:", error);
     process.exit(1);
@@ -25,7 +31,10 @@ async function getGitSummary() {
 
 const gptCommit = async () => {
   const gitSummary = await getGitSummary();
-  console.log(gitSummary);
+  if (!gitSummary) {
+    console.log('No changes to commit. Commit canceled.');
+    process.exit(0);
+  }
   const prompt = `Generate a Git commit message based on the following summary: ${gitSummary}\n\nCommit message: `;
   const parameters = {
     model: "text-davinci-003",
