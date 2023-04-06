@@ -21,7 +21,7 @@ There are two ways to install the Git extension: using npm or manual installatio
 To install the Git extension as an npm package, run the following command:
 
 ```
-$ npm install -g git-commit-gpt
+$ npm install -g git-gpt-commit
 ```
 
 This command will install the Git extension globally on your system.
