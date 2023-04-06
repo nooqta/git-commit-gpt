@@ -3,14 +3,28 @@ Git Commit GPT-3
 An AI-powered Git extension that generates commit messages using OpenAI's GPT-3, streamlining the commit process and improving developer productivity.
 
 Table of Contents
-[Installation](#Installation)
-[Usage](#Usage)
-[Dependencies](#Dependencies)
-[Contributing](#Contributing)
-[License](#License)
+- [Installation](#Installation)
+- [Usage](#Usage)
+    - [Using npm](#Using%20npm)
+    - [Manual Installation](#Manual%20Installation)
+- [Dependencies](#Dependencies)
+- [Contributing](#Contributing)
+- [License](#License)
 
 Installation
 ------
+There are two ways to install the Git extension: using npm or manual installation.
+
+###Using npm
+To install the Git extension as an npm package, run the following command:
+
+```
+$ npm install -g git-commit-gpt
+```
+
+This command will install the Git extension globally on your system.
+
+###Manual Installation
 Clone this repository or download the source code.
 
 ```
@@ -19,7 +33,7 @@ git clone https://github.com/nooqta/git-commit-gpt.git
 
 Change to the project directory and install the required dependencies:
 ```
-cd git-commit-gpt3
+cd git-commit-gpt
 npm install
 ```
 
@@ -28,10 +42,14 @@ Add your OpenAI API key to the .env file:
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-Create a symbolic link using npm link:
+Insall globally and create a symbolic link using npm link:
 ```
+npm i -g
 npm link
 ```
+Usage
+-----
+
 After setting up the project, you can use the Git extension in any Git repository:
 
 Stage your changes:
