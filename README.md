@@ -5,8 +5,8 @@ An AI-powered Git extension that generates commit messages using OpenAI's GPT-3,
 Table of Contents
 -----
 - [Installation](#Installation)
-    - [Using npm](#Using%20npm)
-    - [Manual Installation](#Manual%20Installation)
+    - [Using npm](#Using-npm)
+    - [Manual Installation](#Manual-Installation)
 - [Usage](#Usage)
 - [Dependencies](#Dependencies)
 - [Contributing](#Contributing)
