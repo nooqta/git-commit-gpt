@@ -15,7 +15,7 @@ async function getGitSummary() {
     openai = new OpenAIApi(configuration);
     
     const exec = promisify(originalExec);
-    const { stdout } = await exec("git diff --cached --stat");
+    const { stdout } = await exec("git diff --cached");
     const summary = stdout.trim();
     if (summary.length === 0) {
       return null;
