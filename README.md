@@ -3,10 +3,11 @@ Git Commit GPT-3
 An AI-powered Git extension that generates commit messages using OpenAI's GPT-3, streamlining the commit process and improving developer productivity.
 
 Table of Contents
+-----
 - [Installation](#Installation)
-- [Usage](#Usage)
     - [Using npm](#Using%20npm)
     - [Manual Installation](#Manual%20Installation)
+- [Usage](#Usage)
 - [Dependencies](#Dependencies)
 - [Contributing](#Contributing)
 - [License](#License)
