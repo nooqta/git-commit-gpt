@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { Configuration, OpenAIApi } from "openai";
 import { promisify } from 'util';
-import { exec as originalExec } from 'child_process';
+import { exec as originalExec, execSync } from 'child_process';
 import prompts from "prompts";
 
 let openai;
@@ -48,7 +48,7 @@ const gptCommit = async () => {
   });
 
   if (confirm.value) {
-    require("child_process").execSync(`git commit -m "${message}"`);
+    execSync(`git commit -m "${message}"`);
     console.log("Committed with the suggested message.");
   } else {
     console.log("Commit canceled.");
