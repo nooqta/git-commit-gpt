@@ -14,7 +14,7 @@ Installation
 Clone this repository or download the source code.
 
 ```
-git clone https://github.com/yourusername/git-commit-gpt3.git
+git clone https://github.com/nooqta/git-commit-gpt.git
 ```
 
 Change to the project directory and install the required dependencies:
