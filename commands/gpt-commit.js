@@ -39,7 +39,7 @@ const gptCommit = async () => {
   const parameters = {
     model: "text-davinci-003",
     prompt,
-    temperature: 0.5,
+    temperature: 0.7,
     max_tokens: 50,
     n: 1,
     stop: null,
