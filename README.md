@@ -69,6 +69,7 @@ Dependencies
 - OpenAI - For generating commit messages using GPT-3.
 - Prompts - For creating a user-friendly command-line interface.
 - Dotenv - For loading environment variables from the .env file.
+
 Contributing
 ----
 Contributions are welcome! Please feel free to open a pull request or create an issue if you find a bug or have suggestions for improvements.
