@@ -28,6 +28,12 @@ $ npm install -g git-gpt-commit
 
 This command will install the Git extension globally on your system.
 
+Get your openai API key from [openai](https://platform.openai.com/account/api-keys) and export your OPEN_AI_KEY
+
+```
+export OPEN_AI_KEY=your_openai_key
+```
+
 ### Manual Installation
 Clone this repository or download the source code.
 
